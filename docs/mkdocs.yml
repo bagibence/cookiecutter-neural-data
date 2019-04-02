@@ -1,0 +1,10 @@
+site_name: Cookiecutter Neural Data Analysis
+site_description: A barebones template and directory structure for neural data analysis.
+repo_url: https://github.com/ahwillia/cookiecutter-neural-data
+copyright: This template made by <a target=_blanks href="http://alexhwilliams.info">Alex Williams</a>. Based on <a target=_blanks href="http://drivendata.github.io/cookiecutter-data-science/">this one</a>.
+google_analytics: ['UA-54096005-4', 'auto']
+theme: cinder
+extra_css:
+  - css/extra.css
+pages:
+  - Home: index.md

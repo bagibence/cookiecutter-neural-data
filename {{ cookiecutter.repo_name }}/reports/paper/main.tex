@@ -1,0 +1,109 @@
+\documentclass[10pt,letterpaper]{article}
+
+% document setup
+\usepackage[top=0.75in,bottom=0.75in,left=0.75in,right=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+
+% useful shortcuts (see mymacros.sty)
+\usepackage{mymacros}
+
+% citation style
+\usepackage[backend=biber,
+            style=numeric,
+            doi=false,
+            isbn=false,
+            url=false,
+            eprint=false,
+            maxbibnames=99,
+            sorting=none]{biblatex}
+\addbibresource{refs.bib}
+\renewbibmacro{in:}{}
+
+% helvetica is a nice font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[letterspace=5]{microtype}
+
+% line numbers and spacing
+\usepackage[left]{lineno}
+\usepackage{parskip}
+\usepackage{setspace} 
+\onehalfspacing
+
+% for highlighting
+\usepackage{soul,xcolor}
+\definecolor{lightyellow}{rgb}{1,1,0.7}
+\newcommand{\tcr}[1]{\textcolor{red}{[#1]}}
+\newcommand{\tcg}[1]{\textcolor{darkgray}{\textbf{#1}}}
+
+% for generating nonsense text to get a sense of the latex style.
+\usepackage{blindtext}
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,
+            labelfont=bf,
+            labelsep=period,
+            justification=raggedright,
+            singlelinecheck=off,
+            font=small]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Leave date blank
+\date{}
+
+\begin{document}
+\vspace*{0.2in}
+
+\begin{flushleft}
+{\Large
+\textbf\newline{A Longer and More Formal Title For the Project}
+}
+\newline
+\\
+Author Name\textsuperscript{1, 2},
+Author Name\textsuperscript{3, 4}
+\\
+{
+\singlespacing
+\small
+\textsuperscript{\bf 1}First Department,
+\textsuperscript{\bf 2}Second Department,
+University Name, City, State, Country.\\
+\medskip
+\textsuperscript{\bf 3}First Department,
+\textsuperscript{\bf 4}Second Department,
+University Name, City, State, Country.\\
+}
+
+\end{flushleft}
+
+\linenumbers
+\lsstyle
+
+% Abstract below 300 words
+\section*{Abstract}
+
+\blindtext
+
+\section*{Introduction}
+
+\Blindtext 
+
+\section*{Results}
+
+\subsection*{First subsection}
+
+\blindtext
+
+\subsection*{Second subsection}
+
+\blindtext
+
+\section*{Discussion}
+
+\Blindtext 
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,246 @@
+\ProvidesPackage{mymacros}
+
+% some pretty standard packages.
+\RequirePackage{amsthm}
+\RequirePackage{nicefrac}
+\RequirePackage{mathrsfs}
+\RequirePackage{bm}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{cleveref}
+\RequirePackage{mathtools}
+\RequirePackage{stmaryrd}
+
+% needed for matrices that don't look terrible
+\RequirePackage{collcell}
+\RequirePackage{eqparbox}
+
+\newcommand{\convdist}{\overset{d} \longrightarrow}
+\newcommand{\mbbR}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\mbbN}{\mathbb{N}}
+\newcommand{\msC}{\mathscr{C}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bN}{\mathbf{N}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bZ}{\mathbf{Z}}
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\bd}{\mathbf{d}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\bbf}{\mathbf{f}}
+\newcommand{\bg}{\mathbf{g}}
+\newcommand{\bh}{\mathbf{h}}
+\newcommand{\bi}{\mathbf{i}}
+\newcommand{\bj}{\mathbf{j}}
+\newcommand{\bk}{\mathbf{k}}
+\newcommand{\bl}{\mathbf{l}}
+\newcommand{\bbm}{\mathbf{m}}
+\newcommand{\bn}{\mathbf{n}}
+\newcommand{\bo}{\mathbf{o}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\bq}{\mathbf{q}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\bs}{\mathbf{s}}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bz}{\mathbf{z}}
+
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\boldeta}{\boldsymbol{\eta}}
+\newcommand{\bkappa}{\boldsymbol{\kappa}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bphi}{\boldsymbol{\phi}}
+\newcommand{\bpi}{\boldsymbol{\pi}}
+\newcommand{\bpsi}{\boldsymbol{\psi}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bLambda}{\boldsymbol{\Lambda}}
+\newcommand{\blambda}{\boldsymbol{\lambda}}
+\newcommand{\bOmega}{\boldsymbol{\Omega}}
+\newcommand{\bPhi}{\boldsymbol{\Phi}}
+\newcommand{\bPi}{\boldsymbol{\Pi}}
+\newcommand{\bPsi}{\boldsymbol{\Psi}}
+\newcommand{\bSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\bUpsilon}{\boldsymbol{\Upsilon}}
+\newcommand{\bXi}{\boldsymbol{\Xi}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\bdelta}{\boldsymbol{\delta}}
+\newcommand{\bnabla}{\boldsymbol{\nabla}}
+\newcommand{\bzeta}{\boldsymbol{\zeta}}
+
+\newcommand{\tensor}[1]{\bm{\mathcal{#1}}}
+
+\newcommand{\mcA}{\mathcal{A}}
+\newcommand{\mcB}{\mathcal{B}}
+\newcommand{\mcC}{\mathcal{C}}
+\newcommand{\mcD}{\mathcal{D}}
+\newcommand{\mcE}{\mathcal{E}}
+\newcommand{\mcF}{\mathcal{F}}
+\newcommand{\mcG}{\mathcal{G}}
+\newcommand{\mcH}{\mathcal{H}}
+\newcommand{\mcI}{\mathcal{I}}
+\newcommand{\mcJ}{\mathcal{J}}
+\newcommand{\mcK}{\mathcal{K}}
+\newcommand{\mcL}{\mathcal{L}}
+\newcommand{\mcM}{\mathcal{M}}
+\newcommand{\mcN}{\mathcal{N}}
+\newcommand{\mcO}{\mathcal{O}}
+\newcommand{\mcP}{\mathcal{P}}
+\newcommand{\mcQ}{\mathcal{Q}}
+\newcommand{\mcR}{\mathcal{R}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\mcT}{\mathcal{T}}
+\newcommand{\mcU}{\mathcal{U}}
+\newcommand{\mcV}{\mathcal{V}}
+\newcommand{\mcW}{\mathcal{W}}
+\newcommand{\mcX}{\mathcal{X}}
+\newcommand{\mcY}{\mathcal{Y}}
+\newcommand{\mcZ}{\mathcal{Z}}
+
+\newcommand{\tA}{\text{A}}
+\newcommand{\tB}{\text{B}}
+\newcommand{\tC}{\text{C}}
+\newcommand{\tD}{\text{D}}
+\newcommand{\tE}{\text{E}}
+\newcommand{\tF}{\text{F}}
+\newcommand{\tG}{\text{G}}
+\newcommand{\tH}{\text{H}}
+\newcommand{\tI}{\text{I}}
+\newcommand{\tJ}{\text{J}}
+\newcommand{\tK}{\text{K}}
+\newcommand{\tL}{\text{L}}
+\newcommand{\tM}{\text{M}}
+\newcommand{\tN}{\text{N}}
+\newcommand{\tO}{\text{O}}
+\newcommand{\tP}{\text{P}}
+\newcommand{\tQ}{\text{Q}}
+\newcommand{\tR}{\text{R}}
+\newcommand{\tS}{\text{S}}
+\newcommand{\tT}{\text{T}}
+\newcommand{\tU}{\text{U}}
+\newcommand{\tV}{\text{V}}
+\newcommand{\tW}{\text{W}}
+\newcommand{\tX}{\text{X}}
+\newcommand{\tY}{\text{Y}}
+\newcommand{\tZ}{\text{Z}}
+
+
+\newcommand{\trans}{\mathsf{T}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\def\argmax{\operatornamewithlimits{argmax}}
+\def\argmin{\operatornamewithlimits{argmin}}
+\def\minimize{\operatornamewithlimits{minimize}}
+\DeclareMathOperator{\subjectto}{subject~to}
+
+\newcommand{\distNormal}{\mathcal{N}}
+\newcommand{\distGamma}{\mathrm{Gamma}}
+\newcommand{\distBernoulli}{\mathrm{Bern}}
+
+\newcommand{\prt}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d} #1}}
+\newcommand{\tr}{\text{tr}}
+
+\newcommand{\TODO}[1]{\textcolor{red}{[TODO: #1]}}
+
+\newcommand{\bbI}{\mathbb{I}}
+\newcommand{\bone}{\boldsymbol{1}}
+\newcommand{\bzero}{\boldsymbol{0}}
+
+\newcommand{\PP}{\mathcal{PP}}
+
+\newcommand{\smallsim}{{\smallsym{\mathrel}{\sim}}}
+\makeatletter
+\newcommand{\smallsym}[2]{#1{\mathpalette\make@small@sym{#2}}}
+\newcommand{\make@small@sym}[2]{%
+  \vcenter{\hbox{$\m@th\downgrade@style#1#2$}}%
+}
+\newcommand{\downgrade@style}[1]{%
+  \ifx#1\displaystyle\scriptstyle\else
+    \ifx#1\textstyle\scriptstyle\else
+      \scriptscriptstyle
+  \fi\fi
+}
+
+% trace operator
+\DeclareMathOperator{\Tr}{Tr}
+
+% % KL divergence
+% \DeclarePairedDelimiterX{\infdivx}[2]{}{}{%
+%   #1\;\delimsize\|\;#2%
+% }
+% \newcommand{\infdiv}{\infdivx}
+% \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+\newcommand{\kldiv}[2]{\mathrm{KL} \left [ \, \infdiv{#1}{#2} \, \right ]}
+
+% differentials in integrals
+\newcommand*\dif{\mathop{}\!\mathrm{d}}
+\newcommand*\Dif[1]{\mathop{}\!\mathrm{d^#1}}
+
+\newcommand{\eval}[2]{\left . #1 \right |_{#2}}
+
+\newcommand*\centermathcell[1]{\omit\hfil$\displaystyle#1$\hfil\ignorespaces}
+
+% matrices that don't look terrible
+\newcounter{BMatrix}
+
+\newlength{\maxwd}
+\newcommand{\setmaxwd}[1]{%
+  \eqmakebox[BM-\theBMatrix][\BMalign]{$#1$}%
+}
+
+\MHInternalSyntaxOn
+\newenvironment{BMatrix}[1][c]{
+  \def\BMalign{#1}
+  \stepcounter{BMatrix}
+  \left[\hskip -\arraycolsep
+  \MH_let:NwN \@ifnextchar \MH_nospace_ifnextchar:Nnn
+  \array{ #1 *{\numexpr\c@MaxMatrixCols-1} {>{\collectcell\setmaxwd}#1<{\endcollectcell}}}
+  }{
+  \endarray \hskip -\arraycolsep
+  \right]
+}
+\MHInternalSyntaxOff
+\makeatother
+
+% Nicer looking matrix transpose
+\renewcommand{\top}{\mathsf{T}}
