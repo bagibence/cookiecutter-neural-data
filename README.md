@@ -63,7 +63,7 @@ The directory structure of your new project looks like this:
     │
     ├── {{cookiecutter.project_name}}   <- Source code for use in this project.
     │   │
-    │   ├── __init__.py      <- Makes src a Python module
+    │   ├── __init__.py      <- Makes project a Python module
     │   ├── data.py          <- Scripts to generate, download, or transform data.
     │   ├── models.py        <- Scripts for training models, or using them for prediction.
     │   ├── visualize.py     <- Scripts to create exploratory and results oriented visualizations
