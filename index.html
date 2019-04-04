@@ -119,7 +119,7 @@
 
 <h1 id="cookiecutter-data-science">Cookiecutter Data Science</h1>
 <p><em>A barebones template for neural data analysis.</em></p>
-<p><span style="color:red"><strong>Note:</strong> this cookiecutter template is an early work in progress.</span></p>
+<p><span style="color:red"><strong>Note:</strong> this cookiecutter template is a work in progress.</span></p>
 <h2 id="why-use-this-project-structure">Why use this project structure?</h2>
 <p>See <a href="https://drivendata.github.io/cookiecutter-data-science/"><strong>cookiecutter-data-science</strong></a> and references/links therein for why thinking about project organization is important. This project template was adapted for neuroscience applications. In particular, this template <em>sets a standard folder/directory structure for multi-subject data</em>.</p>
 <h3 id="requirements">Requirements</h3>
@@ -140,8 +140,8 @@
     │   ├── raw            &lt;- Sub-folder containing immutable raw data.
     │   │
     │   └── processed      &lt;- Processed data in a standardized format folder structure.
-    │       │   │
-    │       │   └─ metadata.yml    &lt;- Specifies metadata shared across all subjects.
+    │       │   
+    │       ├── metadata.yml    &lt;- Specifies metadata shared across all subjects.
     │       │
     │       ├── subject_1
     │       │    ├── metadata.yml    &lt;- Specifies metadata specific to subject 1.
@@ -160,7 +160,7 @@
     │
     ├── {{cookiecutter.project_name}}   &lt;- Source code for use in this project.
     │   │
-    │   ├── __init__.py      &lt;- Makes src a Python module
+    │   ├── __init__.py      &lt;- Makes project a Python module
     │   ├── data.py          &lt;- Scripts to generate, download, or transform data.
     │   ├── models.py        &lt;- Scripts for training models, or using them for prediction.
     │   ├── visualize.py     &lt;- Scripts to create exploratory and results oriented visualizations
@@ -242,5 +242,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-04-04 05:27:24
+Build Date UTC : 2019-04-04 05:39:46
 -->
