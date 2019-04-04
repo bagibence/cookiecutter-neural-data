@@ -13,8 +13,8 @@ Suggested Project Organization
     │   ├── raw            <- Sub-folder containing immutable raw data.
     │   │
     │   └── processed      <- Processed data in a standardized format folder structure.
-    │       │   │
-    │       │   └─ metadata.yml    <- Specifies metadata shared across all subjects.
+    │       │   
+    │       ├── metadata.yml    <- Specifies metadata shared across all subjects.
     │       │
     │       ├── subject_1
     │       │    ├── metadata.yml    <- Specifies metadata specific to subject 1.
