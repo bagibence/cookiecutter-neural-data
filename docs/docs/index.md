@@ -2,7 +2,7 @@
 
 _A barebones template for neural data analysis._
 
-<span style="color:red">**Note:** this cookiecutter template is an early work in progress.</span>
+<span style="color:red">**Note:** this cookiecutter template is a work in progress.</span>
 
 ## Why use this project structure?
 
@@ -32,8 +32,8 @@ cookiecutter https://github.com/ahwillia/cookiecutter-neural-data
     │   ├── raw            <- Sub-folder containing immutable raw data.
     │   │
     │   └── processed      <- Processed data in a standardized format folder structure.
-    │       │   │
-    │       │   └─ metadata.yml    <- Specifies metadata shared across all subjects.
+    │       │   
+    │       ├── metadata.yml    <- Specifies metadata shared across all subjects.
     │       │
     │       ├── subject_1
     │       │    ├── metadata.yml    <- Specifies metadata specific to subject 1.
